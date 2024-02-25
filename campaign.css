@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://www.greenpeace.org.uk/wp-content/uploads/2023/04/Greenpeace-final-1-amend-scaled.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1 {
+    color: navy;
+    font-size: 100px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FF5733;
+ }
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    }
+    @font-face {
+font-family: 'Preahvihear';
+src: url('Preahvihear-Regular.ttf') format('truetype');
+/* Add additional font formats if necessary (e.g., woff, woff2) */
+}
+p {
+    font-family: 'Preahvihear';
+    src: url('Preahvihear-Regular.ttf') format('truetype');
+    line-height: 1.6;
+    margin-bottom: 19px;
+    color: #000000;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+li {
+    margin-bottom: 10px;
+}
+a {
+color: rgba(0, 0, 0);
+text-decoration: none;
+transition: color 0.3s;
+}
+a:hover {
+color: #0056b3;
+}
+/* Collapsible Navigation Bar Styles */
+.navbar {
+overflow: hidden;
+background-color: rgba(255, 255, 255, 0.9); /* Blended white background */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+position: fixed;
+top: 0;
+width: 100%;
+transition: top 0.3s;
+text-align: center; /* Center align the navigation links */
+}
+.navbar a {
+display: inline-block; /* Display as inline-block for centering */
+margin: 14px 16px; /* Add some spacing between links */
+color: #333; /* Darker text color */
+text-decoration: none;
+font-size: 17px;
+}
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+box-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+}
+.navbar .icon {
+display: none;
+}
+@media screen and (max-width: 600px) {
+.navbar a:not(:first-child) {
+display: none;
+}
+.navbar a.icon {
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+}
+}
+.navbar.responsive {
+position: relative;
+text-align: center; /* Center align the navigation links */
+}
+.navbar.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.navbar.responsive a {
+display: block;
+text-align: center; /* Center align the navigation links */
+margin: 0;
+}
+.transition-fade {
+opacity: 0;
+transition: opacity 0.2s ease-in-out;
+}
+.transition-fade.show {
+opacity: 1;
+}
+img {
+max-width: 50%;
+height: auto;
+margin: 10px 0; /* Adjust the margin as needed */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.navbar a.active {
+background-color: #ddd;
+color: black;
+box-shadow: 0 0 17px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
+}
+header,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content h4 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.content a {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.content a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 20px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.content-reverse .content-image {
+  order: 2;
+}
+
+.content-reverse .content-text {
+  order: 1;
+}
+
+.content-image,
+.content-text {
+  flex-basis: 50%;
+}
+
+.content h2,
+.content h4,
+.content h3,
+.content p,
+.content a {
+  margin: 0;
+}
+
+.content-image img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content-text {
+  margin-bottom: 20px;
+}
+
+.content-text p,
+.content-text a {
+  margin-bottom: 10px;
+}
+.content-text {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.content-text:hover {
+  height: auto;
+}
+.content-text {
+  font-size: 18px;
+}
+
+.content-text h3 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
