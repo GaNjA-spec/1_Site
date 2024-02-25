@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Fashion - Keep Calm & Stay Classy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/About_menu.css">
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html">Home</a>
+      <a href="About_menu.html" class="active">About</a>
+        <a href="campaign.html">Get Involved</a>
+        <a href="FAQ.html">FAQs</a>
+      </div>
+  
+      <div class="container">
+        <h1 class="transition-fade">What do you wanna know about?</h1>
+        <div  class="container1">
+          <p class="link-paragraph" onclick="window.location.href='Aboutus.html';">About Us</p>
+        </div>
+        <div  class="container1">
+          <p class="link-paragraph" onclick="window.location.href='About_fastfashion.html';">What is Fast Fashion?</p>
+        </div>
+        <div class="container1">
+            <p class="link-paragraph" onclick="window.location.href='Origin.html';">Origin of Fast Fashion</p>
+          </div>
+          <div class="container1">
+            <p class="link-paragraph" onclick="window.location.href='About_textilewaste.html';">What is Textile Waste?</p>
+          </div>
+          
+      </div>
+<script>
+    function toggleNavbar() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  
+    // Toggle the active class for the clicked link
+    var links = x.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].classList.remove("active");
+        }
+        this.classList.add("active");
+      });
+    }
+  }
+    var prevScrollpos = window.pageYOffset;
+    var navbar = document.getElementById("myNavbar");
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        // Scrolling up
+        navbar.style.top = "0";
+      } else {
+        // Scrolling down
+        navbar.style.top = "-100px"; // Adjust this value as needed to control the navbar height
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  
+    window.onload = function() {
+      var fadeElements = document.querySelectorAll('.transition-fade');
+      fadeElements.forEach(function(element) {
+        element.classList.add('show');
+      });
+    };
+  </script>
+  </body>
+  </html>

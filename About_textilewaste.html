@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Fashion and Textile Waste</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/textile_waste.css">
+</head>
+<body> 
+  
+  <div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html">Home</a>
+      <a href="About_menu.html" class="active">About</a>
+        <a href="campaign.html">Get Involved</a>
+        <a href="FAQ.html">FAQs</a>
+      </div>
+  
+  <div class="container">
+  <h1 class="transition-fade"><b>Textile Waste</b></h1>
+   <pre><h2 class='transition-fade'>What is textile waste</h2><pre>
+   <pre><p class='transition-fade'>   The material that is wasted during the production process is known as textile waste. Each stage of the 
+   creation of a product, including spinning, weaving, dyeing, finishing, and even after it is completed, 
+   might result in the production of this waste.</p></pre>
+   <p class='transition-fade'>
+   Within the fashion industry, textile waste is a major problem that adds to environmental and sustainability 
+   problems. The fast-paced cycles of production and consumption that the fashion industry is known for are 
+   fueled by shifting customer demands and fashion trends. This quick turnover of garments has significantly 
+   increased the production of textile waste at numerous 
+   supply chain stages:
+  </p>
+   <ul><p class='transition-fade'><b><u>Manufacturing:</u></b><br>Pre-consumer waste is frequently produced during the manufacture of textiles and garments due to cutting 
+waste, defective products, and overproduction. These materials are occasionally thrown away or downcycled, 
+which causes inefficiencies and more waste.</p>  
+    <p class='transition-fade'><b><u>Design trends:</u></b><br>Short-lived fashion trends can quickly become outmoded, resulting in fashion waste by causing clothing items 
+associated with earlier trends to quickly become unwelcome.</p>
+   <p class='transition-fade'><b><u>Consumer behavior:</u></b><br>Consumers routinely buy new clothes and throw away their old ones, which adds to the amount of post-consumer 
+textile waste. Fast fashion's emergence has intensified this tendency because items that are less expensive 
+and of lower quality are more likely to be thrown away after only a few wears.</p>
+   </ul></pre><pre>
+    <div class="container3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bhi7S06pwv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe></div></pre>
+  <pre>
+    <h2><b>    
+      Global Fashion Industry Waste</b></h2></pre> <div class="container3">
+      <img class="img_deg" src="https://s7d1.scene7.com/is/image/CENODS/10011-cover-teegraph?$responsive$&wid=700&qlt=90,0&resMode=sharp2" height="300" width="350">
+    </div>
+  <pre><ol>
+    <li><p class='transition-fade'><b>Up to 100 billion garments are produced by the fashion industry every year.</b></p></li>
+    <li><p class='transition-fade'><b>And each year, as much as 92 million tons of clothing ends up in landfills.</b></p></li>
+    <li><p class='transition-fade'><b>Only 20% of textiles are collected for reuse or recycling globally.</b></p></li>
+    <li><p class='transition-fade'><b>In reality, 60% of all clothing materials are made of plastic. Nylon, acrylic, and polyester 
+textiles are just a few examples of how commonplace synthetic fibers are in modern society.
+After Packaging Industry, The textile industry production generates 4200 crores kilograms of 
+plastic waste per year,which rise the textile indurtry to win the second highest position</p></li></b> 
+    <li><p class='transition-fade'><b>Every single time when a synthetic garments is washed releases plastic mocrofibers in the water.
+Every year up to 5,00,000 lakhs of microfibers/microplastic are been add up in the water body </b></p></li>
+<li><p class='transition-fade'><b>The fashion industry produces enormous amounts of wastewater while consuming a great deal of 
+water. The result is that the fashion industry uses 79 trillion liters of water annually and 
+contributes to 20% of industrial wastewater. Thought the fashion is one of the most 
+water-intensive industries throught out the world.</b></p></li>
+<li><p class='transition-fade'><b>The fashion industry contribute about 20% of annual global carbon emission.which is more than 
+all maritime shipping and international flights combined.Becoming one of the biggest environmental 
+problem of our time.</b></p></li>
+<li><p class='transition-fade'><b>Between 6 and 8% of all global carbon emissions, or roughly 1.7 billion tonnes of carbon emissions 
+annually, are attributed to the textile and apparel sector.</b></p></li> </ol></pre>
+
+<pre><h2><b>    How to reduce fashion waste </b></h2></pre>
+<pre style="font-size: larger;"><p class='transition-fade'>     Because of our frequent buying of cloths waste generate, a lot of carbon is emitted, water pollute 
+     and water is also wasted. but there are some steps bu which we can solve this problem to a great 
+     extent by following </p> 
+     <ul>
+      <li><p class='transition-fade'> Reusing Our Clothes  </p></li>
+      <li><p class='transition-fade'>Buying Things Which Is Not Fast Fashion </p></li>
+      <li><p class='transition-fade'>Buying Second Hand Clothes   </p></li>
+      <li><p class='transition-fade'>Renting One Time Clothes  </p></li>
+      <li><p class='transition-fade'>Donating Our Clothes  </p></li></ul>
+</pre>
+</div>
+<script>
+  function toggleNavbar() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+
+  // Toggle the active class for the clicked link
+  var links = x.getElementsByTagName("a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+}
+  var prevScrollpos = window.pageYOffset;
+  var navbar = document.getElementById("myNavbar");
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Scrolling up
+      navbar.style.top = "0";
+    } else {
+      // Scrolling down
+      navbar.style.top = "-100px"; // Adjust this value as needed to control the navbar height
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+  window.onload = function() {
+    var fadeElements = document.querySelectorAll('.transition-fade');
+    fadeElements.forEach(function(element) {
+      element.classList.add('show');
+    });
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Fashion and Textile Waste</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/green_house_gas.css">
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" >Home</a>
+    <a href="About_menu.html" class="active">About</a>
+    <a href="campaign.html">Get Involved</a>
+    <a href="FAQ.html">FAQs</a>
+  </div>
+
+<div class="container">
+  <h1 >EMMISSION OF GREEN HOUSE GAS DUE TO TEXTILE WASTE</h1>
+    
+    
+    <a href="Origin of fast fashion.html"></a>
+    <div class="container1">
+        <img  class="img_deg"src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/9453205e492449dc8a8bc4da86362dcd.jpg?type=webp"height="600"width="1250".jpg>
+      </div>
+    <h3 >Throughout its lifecycle, textile waste contributes significantly to greenhouse gas emissions. From energy-intensive production processes utilizing fossil fuels and raw material transportation to emissions released during disposal and decomposition, the textile sector contributes significantly to the release of carbon dioxide (CO2) and other gases into the environment. The environmental impact of textile waste is a significant matter, whether it's the methane created by the breakdown of natural fibers in landfills or the release of CO2 and contaminants during burning. Promoting sustainable production processes, supporting recycling and circular economy models, and raising consumer knowledge are all critical measures in reducing the greenhouse gas footprint associated with textile waste.</h3>
+    
+    
+    
+    <h1 >Phases of production of green house gasses:</h1>
+    <p >1.Production Phase Emissions: The production of textiles involves energy-intensive processes like fiber extraction, spinning, weaving, dyeing, and finishing. These processes often rely on fossil fuels and release significant amounts of greenhouse gases, such as carbon dioxide (CO2) and methane (CH4), into the atmosphere.</p>
+    
+    <p >2.Transport and Distribution: The transportation of raw materials, fabrics, and finished products over long distances also contributes to greenhouse gas emissions, as it involves the burning of fossil fuels in vehicles.</p>
+    
+    <p >3.Waste Management: Textile waste that ends up in landfills contributes to the emission of methane, a potent greenhouse gas. When textiles break down in anaerobic conditions (with limited oxygen), they produce methane as a byproduct. Additionally, the energy-intensive process of incinerating textiles for waste management purposes releases CO2 and other pollutants into the air.</p>
+    
+    <p >3.Decomposition of Natural Fibers: Natural fibers like cotton, wool, and silk can decompose under certain conditions, producing CO2 and methane. Although the decomposition of natural fibers is a natural process, the accumulation of textile waste in landfills can contribute to increased emissions over time.</p>
+    
+    <p >5.Synthetic Fiber Breakdown: Synthetic fibers, such as polyester and nylon, are derived from petroleum-based sources and take a long time to decompose. As these fibers break down into microplastics, they release greenhouse gases and other pollutants into the environment.</p>
+    
+    <p >6.Energy Consumption During Recycling: While recycling textiles can help reduce the environmental impact, the recycling process itself requires energy. Depending on the methods used, recycling textiles may involve processes that emit greenhouse gases.</p>
+
+    <button style="background-color: rgba(0, 0, 0, 0.2); /* Green */
+      border: none;
+      color: white;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 12px;
+      font-size: 16px;">
+      <div>
+        
+        <a href='Origin.html'>Previous</a>
+     
+      
+      </div></button>
+  </div>
+<script>
+  function toggleNavbar() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+
+  // Toggle the active class for the clicked link
+  var links = x.getElementsByTagName("a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+}
+  var prevScrollpos = window.pageYOffset;
+  var navbar = document.getElementById("myNavbar");
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Scrolling up
+      navbar.style.top = "0";
+    } else {
+      // Scrolling down
+      navbar.style.top = "-100px"; // Adjust this value as needed to control the navbar height
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+  window.onload = function() {
+    var fadeElements = document.querySelectorAll('.transition-fade');
+    fadeElements.forEach(function(element) {
+      element.classList.add('show');
+    });
+  };
+</script>
+</body>
+</html>

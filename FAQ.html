@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Fast Fashion Awareness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="styles/FAQ.css" rel="stylesheet">
+  
+</head>
+<body>
+<!-- Navigation bar -->
+<div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html">Home</a>
+      <a href="About_menu.html">About</a>
+      <a href="campaign.html" >Get Involved</a>
+      <a href="FAQ.html" class="active">FAQs</a>
+</div>
+
+<div class="faq-container">
+  <h1 class="faq-heading">Frequently Asked Questions</h1>
+  
+  <div class="faq-item">
+    <p class="faq-question">What is fast fashion?</p>
+    <p class="faq-answer">Fast fashion is a business model in the clothing industry that focuses on producing trendy clothing quickly and inexpensively.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Why is fast fashion concerning?</p>
+    <p class="faq-answer">Fast fashion contributes to environmental issues, exploitative labor practices, and excessive consumption.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">How can I reduce my impact on fast fashion?</p>
+    <p class="faq-answer">You can reduce your impact by buying less, choosing sustainable brands, and supporting ethical practices.</p>
+  </div>
+
+  
+<div class="faq-item">
+    <p class="faq-question">Are all fast fashion brands harmful?</p>
+    <p class="faq-answer">Not all fast fashion brands are equally harmful, but many prioritize profit over sustainability and ethical practices. It's important to research and support brands that prioritize responsible production.</p>
+  </div>
+  
+  <div class="faq-item">
+    <p class="faq-question">What are some sustainable alternatives to fast fashion?</p>
+    <p class="faq-answer">Sustainable alternatives include shopping from ethical brands, buying secondhand, renting clothing, and participating in clothing swaps.</p>
+  </div>
+  
+  <div class="faq-item">
+    <p class="faq-question">How does fast fashion impact the environment?</p>
+    <p class="faq-answer">Fast fashion contributes to pollution, excessive waste, and resource depletion due to its high turnover of cheaply made garments.</p>
+  </div>
+  
+  <div class="faq-item">
+    <p class="faq-question">Is there a connection between fast fashion and labor exploitation?</p>
+    <p class="faq-answer">Yes, many fast fashion brands have been criticized for exploiting workers in low-wage countries, leading to poor working conditions and unfair wages.</p>
+  </div>
+  
+  <div class="faq-item">
+    <p class="faq-question">What can I do with old clothing I no longer need?</p>
+    <p class="faq-answer">You can donate, recycle, or upcycle old clothing to extend their lifespan and reduce waste. Many organizations accept clothing donations.</p>
+  </div>
+  
+  <div class="faq-item">
+    <p class="faq-question">How can I raise awareness about the negative effects of fast fashion?</p>
+    <p class="faq-answer">You can raise awareness by sharing information on social media, organizing events or workshops, and supporting initiatives that promote sustainable fashion practices.</p>
+  </div>
+
+  <!-- Add more FAQ items as needed -->
+
+</div>
+<script>
+    function toggleNavbar() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  
+    // Toggle the active class for the clicked link
+    var links = x.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].classList.remove("active");
+        }
+        this.classList.add("active");
+      });
+    }
+  }
+    var prevScrollpos = window.pageYOffset;
+    var navbar = document.getElementById("myNavbar");
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        // Scrolling up
+        navbar.style.top = "0";
+      } else {
+        // Scrolling down
+        navbar.style.top = "-100px"; // Adjust this value as needed to control the navbar height
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  
+    window.onload = function() {
+      var fadeElements = document.querySelectorAll('.transition-fade');
+      fadeElements.forEach(function(element) {
+        element.classList.add('show');
+      });
+    };
+  </script>
+</body>
+</html>

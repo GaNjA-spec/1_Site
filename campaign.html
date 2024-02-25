@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Fashion and Textile Waste</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/campaign.css">
+ 
+</head>
+<style>
+    .img_deb {
+        float:left;
+    }
+</style>
+<body> 
+  
+  <div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html">Home</a>
+    <a href="About_menu.html">About</a>
+    <a href="campaign.html" class="active">Get Involved</a>
+    <a href="FAQ.html">FAQs</a>
+  </div>
+  <div class="container">
+    <h1>CAMPAIGNS</h1>
+    <h2>There were numerous campaigns<br> launched against fast fashion<br>Some of them include:</h2>
+  <main>
+    <div class="content">
+      <div class="content-image">
+        <img src="https://static.fibre2fashion.com/newsresource/images/273/disposable_285097.jpg" alt="Image 1">
+      </div>
+      <div class="content-text">
+        <h3 style="color: black;">No New Clothes</h3>
+        <p>The #NoNewClothes<br> pledge encourages<br> brands to centre their <br>sustainability efforts<br> around justice and<br> wellbeing</p>
+        <a href="https://www.vogue.in/fashion/content/the-no-new-clothes-pledge-encourages-brands-to-centre-their-sustainability-efforts-around-justice-and-wellbeing">Learn more</a>
+      </div>
+    </div>
+
+    <div class="content content-reverse">
+        <div class="content-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Who_Made_My_Clothes_Protest.jpg" alt="Image 2">
+        </div>
+        <div class="content-text">
+          <h3 style="color: black;">Who made my clothes</h3>
+          <p>Founded in the wake of the devastating Rana Plaza disaster,
+             the Who Made My Clothes movement shines a spotlight on the notoriously shadowy supply chains of the global fashion industry.
+              Identified by the famous hashtag #whomademyclothes, the movement has garnered international support and prominence.</p>
+              <a href="https://fashioninsiders.co/features/inspiration/who-made-my-clothes-movement/#:~:text=Who%20Started%20the%20%E2%80%9CWho%20Made,opinion%20leader%20in%20sustainable%20fashion.">Learn more</a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content-image">
+          <img src="https://theidfactory.com/wp-content/uploads/2023/02/reset-the-trend-idf.jpg" alt="Image 1">
+        </div>
+        <div class="content-text">
+          <h3 style="color: black;">ReSet the Trend</h3>
+          <p>Under the motto #ReFashionNow, the campaign attempts to address this problem by raising awareness about the environmental,
+             social, economic and health-related benefits of transforming the textiles sector. It also highlights the opportunities that 
+             sustainable fashion opens up for both businesses and consumers.</p>
+             <a href="https://environment.ec.europa.eu/news/reset-trend-2023-01-26_en#:~:text=Under%20the%20motto%20%23ReFashionNow%2C%20the,for%20both%20businesses%20and%20consumers.">Learn more</a>
+        </div>
+      </div>
+
+      <div class="content content-reverse">
+        <div class="content-image">
+          <img src="https://www.vestilanatura.it/wp-content/uploads/2018/09/detox-fashion-greenpeace.jpg" alt="Image 2">
+        </div>
+        <div class="content-text">
+          <h3 style="color: black;">Detox my Fashion</h3>
+          <p>Detox My Fashion is a Campaign launched by GreenPeace in 2011. The goal of the campaign Detox My Fashion is to make the fashion sector more sustainable, 
+            inviting fashion brands to produce more respectful of the environment. 
+            GreenPeace mainly targets the distribution chains of the Fast Fashion and to fashion houses, inviting the world's largest fashion brands to join.</p>
+            <a href="https://www.greenpeace.org/international/act/detox/">Learn more</a>
+        </div>
+      </div>
+
+  </main>
+  <h1>PETITIONS</h1>
+    <h2>Below are some Petitons against fast fashion which you can check out</h2>
+    <div class="content">
+      <div class="content-image">
+        <img src="https://images.squarespace-cdn.com/content/v1/60098e9bbc6c325307708e5b/1615405310354-3C6G4U0KTTIBCUF2YZX8/Cambodia_20201107_WSM-454.jpg?format=2500w" alt="Image 1">
+      </div>
+      <div class="content-text">
+        <h3 style="color: black;">#Payyourworkers</h3>
+        <p>Garment brands must take immediate steps to ensure the workers who make their clothes are paid in full or receive the full severance money they are owed. They must give these workers back their futures.</p>
+           <a href="https://www.payyourworkers.org/petition">Visit Here</a>
+      </div>
+    </div>
+
+    <div class="content content-reverse">
+      <div class="content-image">
+        <img src="https://assets.change.org/photos/2/kr/qx/hvkRQxLrpGPPlyi-800x450-noPad.jpg?1547879373" alt="Image 2">
+      </div>
+      <div class="content-text">
+        <h3 style="color: black;">#AgainstFastFashion</h3>
+        <p>To spread awareness of this problem, two high school juniors from Amador Valley High School started an organization called #AgainstFastFashion in order to advocate the negative consequences of fast fashion and promote the purchasing of ethical and secondhand clothing.  </p>
+          <a href="https://www.change.org/p/againstfastfashion-stop-purchasing-from-fast-brands-and-choose-to-buy-ethically-or-second-hand">Visit Here</a>
+      </div>
+    </div>
+
+
+</div>
+<script>
+  function toggleNavbar() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+
+  // Toggle the active class for the clicked link
+  var links = x.getElementsByTagName("a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+}
+  var prevScrollpos = window.pageYOffset;
+  var navbar = document.getElementById("myNavbar");
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Scrolling up
+      navbar.style.top = "0";
+    } else {
+      // Scrolling down
+      navbar.style.top = "-100px"; // Adjust this value as needed to control the navbar height
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+  window.onload = function() {
+    var fadeElements = document.querySelectorAll('.transition-fade');
+    fadeElements.forEach(function(element) {
+      element.classList.add('show');
+    });
+  };
+</script>
+</body>
+</html>
